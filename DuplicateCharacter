@@ -1,0 +1,25 @@
+package practise;
+
+public class DuplicateCharacter {
+	
+	public static void main(String[] args) 
+	{
+//		DuplicateCharacter.duplicatechar();
+		String input = "TestLeaf India"; 
+		char sin;
+		int len = input.length();
+		int j=0;
+		char[] inChr = input.toCharArray();
+		for (int i = 0; i <=len-1;i++){
+			sin = inChr[i];
+			if(sin==inChr[i]){
+				j++;
+			}			
+		}
+		System.out.println("The number of repeated character is "+j);
+	}
+	}
+
+	/*public static  void duplicatechar(){
+		
+}*/

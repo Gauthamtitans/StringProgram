@@ -1,0 +1,18 @@
+package practise;
+
+public class RemoveWhiteSpace {
+
+	public static void main(String[] args) {
+		String input = " Test Leaf India ";
+		System.out.println(input);
+		System.out.println("The lenght of the string brfore trim "+input.length());
+		
+		String output = input.trim();
+		System.out.println(output);
+		System.out.println("The lenght of the string after trim "+output.length());
+		
+		String output1 = output.replaceAll("\\s", "");
+		System.out.println(output1);
+		System.out.println("The lenght of the string without white spaces "+output1.length());
+	}
+}

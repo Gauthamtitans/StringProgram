@@ -1,0 +1,29 @@
+package practise;
+
+import java.util.Scanner;
+
+public class CalculateChar {
+
+	public static void main(String[] args) {
+		CalculateChar.reverseString();
+
+	}
+	public static void reverseString(){
+		System.out.println("Enter the String Value");
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
+		scanner.close();
+		//char reverse = "";
+		int len = input.length();
+		int j=0;
+		char[] inChr = input.toCharArray();
+		for(int i=0;i<len-1;i++){
+			//reverse = inChr[i];
+			if(inChr[i]=='A'){
+				j++;
+			}
+		}
+		System.out.println("The number A available in the gven word is "+j);
+
+	}
+}
